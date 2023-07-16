@@ -34,7 +34,7 @@ En esta homework vamos a crear nuestro proyecto de **Rick and Morty**. Comenzare
 
 Tu primer paso será ejecutar el comando **`npm install`** para instalar todas las dependencias dentro de esta homework.
 
-En el archivo **`App.js`** ya hay importado 3 componentes: **Card**, **Cards** y **SearchBar**. Estos componentes reciben propiedades y están siendo renderizados en nuestra aplicación.
+En el archivo **`App.jsx`** ya hay importado 3 componentes: **Card**, **Cards** y **SearchBar**. Estos componentes reciben propiedades y están siendo renderizados en nuestra aplicación.
 
 <br />
 
@@ -99,29 +99,30 @@ Recibe por props una función **`onSearch`**. La función **`onSearch`** se debe
 
 1. Dirígete a un nuevo directorio desde tu terminal (por ejemplo, tu escritorio). Allí es dónde crearás tu aplicación.
 
-2. Ahora utiliza **_`CRA`_** (create-react-app) mediante **npx** para crear una nueva app de React:
+2. Ahora utiliza **_`VITE`_** (create vite@latest) mediante **npx** para crear una nueva app de React:
 
 ```bash
-npx create-react-app rick_and_morty
+npx create vite@latest rick_and_morty
 ```
 
 > [**NOTA**]: para el nombre de tu app no puedes usar mayúsculas ni el símbolo "&".
 
 Al término del proceso, podrás ver que en tu directorio se creó una nueva carpeta llamada "rick_and_morty". Abre esta carpeta con tu Visual Studio Code. Allí encontrarás algo como esto:
 
-<img src="./img/cra_01.png" height="200px">
+<img src="./img/vite_01.png" height="200px">
 
 3. Dentro de esta nueva carpeta ejecuta:
 
 ```bash
-    npm start
+    npm run dev
 ```
+> [**NOTA**]: este comando de script se puede modificar desde el archivo package.json>scripts>dev
 
 > [**NOTA**]: si aún tenemos corriendo el server local de la homework Integration Parte 1, vamos a obtener un error debido a que el puerto predeterminado (3000) está ocupado. Podemos elegir utilizar otro puerto, o terminar el proceso anterior y luego reintentarlo.
 
 Esperamos que se "levante" el servidor local y luego veremos algo así:
 
-<img src="./img/cra_02.gif" height="360px">
+<img src="./img/vite_02.gif" height="360px">
 
 <br />
 
