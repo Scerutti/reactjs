@@ -61,9 +61,9 @@ Además:
 🔹 Dentro de la carpeta `src` vas a encontrar ya el esqueleto del proyecto React, estructurado de la siguiente manera:
 
 -  Una carpeta llamada `components`
--  Un archivo llamado **App.js**
+-  Un archivo llamado **App.jsx**
 -  Un archivo **index.css**
--  Un archivo **index.js**
+-  Un archivo **main.jsx**
 
 🔹 Para estos ejercicios, trabajaremos sólo dentro la carpeta `components`. En principio sólo tenemos el componente `Bienvenido.jsx`.
 

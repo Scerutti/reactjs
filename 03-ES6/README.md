@@ -1,24 +1,3 @@
-![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
-
-<table class="hide" width="100%" style='table-layout:fixed;'>
-  <tr>
-   <td>
-    <a href="https://airtable.com/shrHsDa2eamWqLAre?prefill_clase=03-ES6">
-   <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
-   <br>
-   Hacé click acá para dejar tu feedback sobre esta clase.
-    </a>
-   </td>
-              <td>
-     <a href="https://quiz.soyhenry.com/evaluation/new/606f6127656c8d23c2e60f50">
-      <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/HSQuiz.svg/768px-HSQuiz.svg.png" width="100" height="100"/>
-      <br>
-      Hacé click acá completar el quiz teórico de esta lecture.
-     </a>
-  </td>
-  </tr>
-</table>
-
 # ECMAScript 6
 
 El ES6 ,también conocido como ECMAScript 2015 o ES2015+, es la última versión del standart. Este nuevo update es el primero desde que se estandarizó el lenguaje en 2009. Las implementaciones del nuevo standart todavía se están haciendo para varios motores de JavaScript.
@@ -570,7 +549,3 @@ echo 'console.log([1, 2, 3].map(n => n + 1));' > index.js
 
 De esa forma vamos a poder transformar un archivo y lo tenemos que hacer manualmente. Si queremos que sea automático tenemos muchísimas opciones.
 Veamos algunas en la página de [babel](https://babeljs.io/docs/setup/) y elijamos el setup que más nos guste.
-
-## Homework
-
-Completa la tarea descrita en el archivo [README](https://github.com/soyHenry/FT-M2/blob/master/03-ES6/homework/README.md)
