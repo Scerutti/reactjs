@@ -193,7 +193,7 @@ module.exports = React.createClass({
   render: function(){
     return (
       <div className=' prueba '>
-        Hola, Henry!!
+        Hola, Seba!!
       </div>
     )
   }
@@ -242,7 +242,7 @@ module.exports = React.createClass({
     console.log(prueba);
     return (
       <div className= {prueba}>
-        Hola, Henry!!
+        Hola, Seba!!
       </div>
     )
   }
@@ -283,7 +283,7 @@ module.exports = React.createClass({
   render: function(){
     return (
       <div className= {s.prueba}>
-        <h1 className={s.title}>Hola, Henry!!</h1>
+        <h1 className={s.title}>Hola, Seba!!</h1>
         <p className{[s.title, s.size].join[' ']}>Prueba</p>
       </div>
     )

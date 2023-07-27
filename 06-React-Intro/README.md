@@ -1,24 +1,3 @@
-![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
-
-<table class="hide" width="100%" style='table-layout:fixed;'>
-  <tr>
-   <td>
-    <a href="https://airtable.com/shrHsDa2eamWqLAre?prefill_clase=06-React-Intro">
-   <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
-   <br>
-   Hacé click acá para dejar tu feedback sobre esta clase.
-    </a>
-             <td>
-      <a href="https://quiz.soyhenry.com/evaluation/new/606b936e656c8d23c2e60e8a">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/HSQuiz.svg/768px-HSQuiz.svg.png" width="100" height="100"/>
-        <br>
-        Hacé click acá completar el quiz teórico de esta lecture.
-      </a>
-   </td>
-  </td>
-  </tr>
-</table>
-
 # REACT
 
 ## Qué es React?
@@ -118,7 +97,7 @@ Ahora agreguemos un poco de código de React en el body:
       render(){
         return (
           <div>
-            Hola, Soy Henry!!
+            Hola, Seba!!
           </div>
         )
       }
@@ -127,7 +106,7 @@ Ahora agreguemos un poco de código de React en el body:
     function HelloWorldFunction() {
       return(
         <div>
-          Hola, Soy Henry!!
+          Hola, Seba!!
         </div>
       )
     };
@@ -257,7 +236,7 @@ class HelloWorld extends React.Component {
   render(){
     return (
       <div>
-        Hola, Soy Henry!!
+        Hola, Seba!!
       </div>
     )
   }
@@ -266,7 +245,7 @@ class HelloWorld extends React.Component {
 function HelloWorldFunction() {
   return(
     <div>
-      Hola, Soy Henry!
+      Hola, Seba!
     </div>
   )
 };
@@ -397,7 +376,7 @@ class HelloWorld extends React.Component{
   render(){
     return (
       <div>
-        Hola, Soy Henry!!
+        Hola, Seba!!
       </div>
     )
   }
@@ -406,7 +385,7 @@ class HelloWorld extends React.Component{
 function HelloWorldFunction() {
   return(
     <div>
-      Hola, Soy Henry!
+      Hola, Seba!
     </div>
   )
 };
@@ -422,7 +401,7 @@ var HelloWorld = function (_React$Component) {
       return React.createElement(
         "div",
         null,
-        "Hola, Soy Henry!!"
+        "Hola, Seba!!"
       );
     }
   }]);
@@ -437,7 +416,7 @@ function HelloWorld() {
   return React.createElement(
     'div',
     null,
-    "Hola, Soy Henry!!"
+    "Hola, Seba!!"
   );
 }
 
@@ -463,7 +442,7 @@ class HelloWorld extends React.Component {
   render(){
     return (
       <div>
-        Hola, Soy Henry!!
+        Hola, Seba!!
       </div>
     )
   }
@@ -480,7 +459,7 @@ import ReactDOM from 'react-dom';
 function HelloWorldFunction() {
   return(
     <div>
-      Hola, Soy Henry!
+      Hola, Seba!
     </div>
   )
 };
@@ -496,7 +475,7 @@ Bien, ahora ya tenemos nuestro propio componente creado. Para indicarle a React 
 
 Una de las ventajas de separar todo en Componentes, es que estos pueden ser reutilizables. Para que lo sean, vamos a poder cambiar un poco su comportamiento pasandole algunos datos. En React estos datos se conocen como __props__ (propiedades) de un Componente. Veamos la forma de pasar _props_ a un Componente.
 
-Las _props_ funcionan como los _atributos_ HTML, es decir, que cuando usamos un Componente podemos agregarle _props_ escribiendo su nombre dentro del tag del  mismo. Por ejemplo, para agregar la _prop_ `name` al Componente que habiamos creado antes, cuando lo usamos escribimos `<HelloWorld name='Henry />`. De esta forma, podemos pasar una o varias _props_ al mismo Componente.
+Las _props_ funcionan como los _atributos_ HTML, es decir, que cuando usamos un Componente podemos agregarle _props_ escribiendo su nombre dentro del tag del  mismo. Por ejemplo, para agregar la _prop_ `name` al Componente que habiamos creado antes, cuando lo usamos escribimos `<HelloWorld name='Seba />`. De esta forma, podemos pasar una o varias _props_ al mismo Componente.
 Ahora, para utilizarlas, dentro del Componente vamos a tener un objeto que se encuentra en `this.props` que va a contener todas las _props_ que le hayamos dado a ese Componente. En el ejemplo, el `name` va a estar en `this.props.name` y va a tomar el valor de `Toni`. Por último, para poder acceder al contenido de `this.props.name` vamos a tener que escribir una _expresión JavaScript_ dentro de _JSX_, para hacerlo tenemos que separarla con __{}__, en el ejemplo también usamos los _{}_ para pasar una variable como  _prop_:
 
 ```javascript
@@ -566,7 +545,7 @@ class HelloWorld extends React.Component {
     )
   }
 };
-ReactDOM.render(<HelloWorld name='Soy Henry!' />, document.getElementById('app'));
+ReactDOM.render(<HelloWorld name='Seba!' />, document.getElementById('app'));
 ```
 
 Hemos creado el `form` y dentro un `input` donde el usuario va a escribir su nombre, como pueden ver hemos agregado el atributo `ref`, este es especial de React, y lo usa para poder hacer referencia luego a ese elemento. Por ahora este `form` no hace nada, le agreguemos una acción cuando es Submiteado. Para eso usamos un Evento nativo de React llamado `onSubmit`, que tambien pasamos como un atributo, y dentro suyo la función que queremos que se ejecute como callback. Generalmente estas funciones son partes del Componente, por lo tanto la vamos a definir dentro del mismo:
@@ -598,7 +577,7 @@ class HelloWorld extends React.Component {
     )
   }
 };
-ReactDOM.render(<HelloWorld name='Soy Henry!' />, document.getElementById('app'));
+ReactDOM.render(<HelloWorld name='Seba!' />, document.getElementById('app'));
 ```
 
 Como vemos, pudimos acceder al elemento `input` usando `this.refs` gracias a que agregamos el bind del __this__ en nuestro constructor. En el constructos vamos a poder setear props y estados por default para nuestro componente. Cabe notar que lo que se guarda dentro de `refs` es una referencia al __elemento HTML__, por lo tanto si queremos lo que escribió el usuario, usamos `this.refs.name.value`.
@@ -630,7 +609,7 @@ function HelloWorld(props) {
   )
 }
 
-ReactDOM.render(<HelloWorld name='Soy Henry!' />, document.getElementById('app'));
+ReactDOM.render(<HelloWorld name='Seba!' />, document.getElementById('app'));
 ```
 
 En el caso de un componente de funcion, no podemos usar el atributo `ref` ya que esta no puede ser instanciada, y no tenemos el uso de la palabra `this` para hacer referencia a 'refs' dentro de la clase. Aca estamos usando una nueva caracteristica de React que son los Hooks. En este caso estamos importando el Hook `useRef`, que lo iniciamos con un argumento, en este caso null, cuya propiedad `.current` se inicializa sobre el argumento pasado. En este caso pasamos un objeto de referencia a React con `ref`, React configurará su propiedad `.current` al nodo del DOM correspondiente cuando sea que el nodo cambie.
@@ -646,7 +625,7 @@ Ahora armemos un ejemplo un poco más complejo, en este vamos a tener dos compon
 ```javascript
 class ContenedorAmigos extends React.Component {
   render(){
-    const name = 'Soy Henry';
+    const name = 'Seba';
     const amigos = ['Santi', 'Guille', 'Facu', 'Solano'];
     return (
       <div>
@@ -658,7 +637,7 @@ class ContenedorAmigos extends React.Component {
 };
 ```
 
-En este componente hemos definido un método `render` un poco más complejo, en el tenemos dos variables (`name` y `amigos`) y retornamos un XML que utiliza estas dos variables. Como ven, podemos acceder a un _prop_ del mismo Componente usando los `{}`, de esta forma `{name}` va a ser reemplazado por `Soy Henry`. Luego llamamos a un componente que todavía no hemos definido con el nombre de `mostrarLista` y le pasamos como propiedad el arreglo `amigos`. Por lo tanto dentro de `mostrarLista` vamos a disponer de ese arreglo como una _prop_.
+En este componente hemos definido un método `render` un poco más complejo, en el tenemos dos variables (`name` y `amigos`) y retornamos un XML que utiliza estas dos variables. Como ven, podemos acceder a un _prop_ del mismo Componente usando los `{}`, de esta forma `{name}` va a ser reemplazado por `Seba`. Luego llamamos a un componente que todavía no hemos definido con el nombre de `mostrarLista` y le pasamos como propiedad el arreglo `amigos`. Por lo tanto dentro de `mostrarLista` vamos a disponer de ese arreglo como una _prop_.
 
 Definamos el elemento hijo o _child_:
 
@@ -683,7 +662,7 @@ Viendo el ejemplo anterior usando funciones:
 
 ```javascript
 function ContenedorAmigos() {
-  const name = 'Soy Henry';
+  const name = 'Seba';
   const amigos = ['Santi', 'Guille', 'Facu', 'Solano'];
   return (
     <div>
@@ -921,11 +900,11 @@ Digamos que tenemos un Componente cualquiera (de React o bien HTML simple), y qu
 
 ```html
 <Nombre>
-  SoyHenry
+  Seba
 </Nombre>
 ```
 
-React nos da una forma simple de acceder a ellos, y es con la propiedad `children` de `this.props`. En este ejemplo en particular, la propiedad `this.props.children` del Componente _Nombre_ va a tomar el valor 'Soy Henry'.
+React nos da una forma simple de acceder a ellos, y es con la propiedad `children` de `this.props`. En este ejemplo en particular, la propiedad `this.props.children` del Componente _Nombre_ va a tomar el valor 'Seba'.
 
 Qué Pasa si lo que está adentro es un poco más complejo? Por Ejemplo:
 
@@ -969,7 +948,3 @@ En este ejemplo estamos declarando que las _props_ que le lleguen al Componente 
 Como vemos, toda esta funcionalidad está contenida en el objeto `React.PropTypes` que viene nativamente en React.
 
 > Para más información sobre `React.PropTypes` y las cosas que podemos controlar con ella vamos a la documentación oficial [aquí](https://facebook.github.io/react/docs/typechecking-with-proptypes.html).
-
-## Homework
-
-Completa la tarea descrita en el archivo [README](https://github.com/soyHenry/FT-M2/blob/master/06-React-Intro/homework/README.md)
