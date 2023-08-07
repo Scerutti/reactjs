@@ -77,7 +77,3 @@ Si terminaste con todos los requerimientos anteriores y todavía te queda tiempo
 </br >
 
 ---
-
-## **✅ FEEDBACK**
-
-### Usa este [**formulario**](https://docs.google.com/forms/d/e/1FAIpQLSe1MybH_Y-xcp1RP0jKPLndLdJYg8cwyHkSb9MwSrEjoxyzWg/viewform) para reportar tus observaciones de mejora o errores. Tu feedback es muy importante para seguir mejorando el modelo educativo.

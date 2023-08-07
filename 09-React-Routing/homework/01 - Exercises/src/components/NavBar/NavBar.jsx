@@ -1,5 +1,5 @@
 import React from "react";
-import logoHenry from "../../assets/logo-henry.png";
+import avivateLogo from "../../assets/avivate_logo.png";
 import styleNav from "./NavBar.module.css";
 
 export default function NavBar() {
@@ -7,7 +7,7 @@ export default function NavBar() {
     <div className={styleNav.container}>
       <ul className={styleNav.menu}>
         <li>
-          <img src={logoHenry} alt="logo-henry" />
+          <img src={avivateLogo} alt="logo-avivate" />
         </li>
         <li>
           <h1>Central de Cruceros</h1>

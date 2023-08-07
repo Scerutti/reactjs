@@ -9,7 +9,7 @@ import NavBar from './NavBar.jsx';
 function Home() {
   return (
     <div>
-      <h2>Home, Soy Henry!!</h2>
+      <h2>Home Avivate!!</h2>
     </div>
   );
 };
@@ -34,7 +34,7 @@ const Root = (
         <h2>About Other</h2>
       </Route>
       <Route path="/ejemplo">
-        <Ejemplo nombre="Toni" apellido="Tralice"/>
+        <Ejemplo nombre="Seba" apellido="Cerutti"/>
       </Route>
       <Route path="/">
         <h2>Default if no match</h2>
