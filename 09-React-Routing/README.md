@@ -1,24 +1,3 @@
-![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
-
-<table class="hide" width="100%" style='table-layout:fixed;'>
-  <tr>
-   <td>
-    <a href="https://airtable.com/shrHsDa2eamWqLAre?prefill_clase=09-React-Routing">
-   <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
-   <br>
-   Hacé click acá para dejar tu feedback sobre esta clase.
-    </a>
-   </td>
-              <td>
-      <a href="https://quiz.soyhenry.com/evaluation/new/607ee76b56b4056ff03288da">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/HSQuiz.svg/768px-HSQuiz.svg.png" width="100" height="100"/>
-        <br>
-        Hacé click acá completar el quiz teórico de esta lecture.
-      </a>
-   </td>
-  </tr>
-</table>
-
 # Front-End Routing
 
 Vamos a ver que muchísimos proyectos de _React_ están construidos comos **SPA** (Single Page Applications), es decir que sin recargar una página se van mostrando algunos _Containers_ u otros según donde vaya navegando el usuario. Gracias a que tenemos todo encapsulado en _Componentes_ pensar nuestra _app_ como **SPA** no puede ser muy complejo, lo que sí puede serlo es el _ruteo_ interno en el _front-end_, es decir, el trabajo de **mapear** cada _link_ con algún _Componente_. Por suerte no estamos solos, existen varias librerías en _npm_ listas para ayudarnos con esto. Nosotros vamos a usar una llamada _react-router_.
@@ -103,7 +82,7 @@ import { Link } from 'react-router-dom';
 function Home(){
     return (
       <div>
-        Hola, Soy Henry!!
+        Hola, Avivate!!
         <a href='#/lista'>Link normal a Lista</a>
         <Link to='/lista'>Link de react-router a Lista</Link>
         <Link to='/'>Link de react-router a Home</Link>

@@ -32,7 +32,7 @@ function NavBar() {
 function Home() {
   return (
     <div>
-      <h2>Home, Soy Henry!!</h2>
+      <h2>Home, Avivate!!</h2>
     </div>
   );
 };

@@ -17,7 +17,7 @@ function Home() {
   let match = useRouteMatch();
   return (
     <div>
-      <h2>Home, Soy Henry!!</h2>
+      <h2>Home, Avivate!!</h2>
       <Link to='/linkAbsolute'>Link Absolute</Link>
       <br></br>
       <Link to={`${match.url}/linkRelative`}>Link Relative</Link>

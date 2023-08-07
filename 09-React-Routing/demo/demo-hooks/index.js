@@ -9,7 +9,7 @@ import History from './History.jsx';
 
 const customLocation = {
   pathname: '/location',
-  state: { extraData: 'Henry' }
+  state: { extraData: 'Seba' }
 }
 
 function NavBar() {

@@ -83,9 +83,9 @@ describe('01 | Ejercicios', () => {
       species: []
     })
 
-    input.simulate('change', { target: { value: 'Henry Zoo' } })
+    input.simulate('change', { target: { value: 'Zoo' } })
     expect(useState).toHaveBeenCalledWith({
-      zooName: 'Henry Zoo',
+      zooName: 'Zoo',
       animals: [],
       allAnimals: [],
       species: []

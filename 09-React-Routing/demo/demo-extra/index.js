@@ -21,7 +21,7 @@ const Root = (
         <Redirect to={{
           pathname: "/new",
           search: "?name=Franco",
-          state: {name: "Henry"}
+          state: {name: "Cacho"}
         }} />
       </Route>
       <Route path="/old">
