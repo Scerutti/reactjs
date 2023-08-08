@@ -55,7 +55,7 @@ describe("02 | Ejercicios", () => {
     return store.dispatch(actions.getStoreName()).then(() => {
       // ^ Si en algún momento tira error en esta línea, recordar que la action DEBE retornar una promesa.
       const actions = store.getActions();
-      expect(actions[0].payload).toBe("Henry-Market");
+      expect(actions[0].payload).toBe("Avivate-Market");
       expect(actions[0]).toEqual({
         type: types.GET_STORE_NAME,
         payload: data.store.name,

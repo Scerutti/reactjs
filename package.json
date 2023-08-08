@@ -14,7 +14,7 @@
   "standard": {
     "env": [ "mocha" ]
   },
-  "author": "Henry",
+  "author": "Avivate",
   "license": "ISC",
   "jest": {
     "testURL": "http://localhost/"
