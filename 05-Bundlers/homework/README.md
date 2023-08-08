@@ -538,7 +538,3 @@ Esta bien - hagamos esto una vez más. Ve a través de tus archivos JavaScript y
 </br >
 
 ---
-
-## **✅ FEEDBACK**
-
-### Usa este [**formulario**](https://docs.google.com/forms/d/e/1FAIpQLSe1MybH_Y-xcp1RP0jKPLndLdJYg8cwyHkSb9MwSrEjoxyzWg/viewform) para reportar tus observaciones de mejora o errores. Tu feedback es muy importante para seguir mejorando el modelo educativo.

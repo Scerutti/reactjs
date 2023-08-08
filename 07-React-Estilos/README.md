@@ -1,24 +1,3 @@
-![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
-
-<table class="hide" width="100%" style='table-layout:fixed;'>
-  <tr>
-   <td>
-    <a href="https://airtable.com/shrHsDa2eamWqLAre?prefill_clase=07-React-Estilos">
-   <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
-   <br>
-   Hacé click acá para dejar tu feedback sobre esta clase.
-    </a>
-   </td>
-              <td>
-      <a href="https://quiz.soyhenry.com/evaluation/new/608f049d56b4056ff032a31f">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/HSQuiz.svg/768px-HSQuiz.svg.png" width="100" height="100"/>
-        <br>
-        Hacé click acá completar el quiz teórico de esta lecture.
-      </a>
-   </td>
-  </tr>
-</table>
-
 # Dando Estilos en React
 
 Este es un tema muy particular, ya que se está cambiando la filosofía que teniamos de usar CSS como lo conocemos para dar estilos, es decir en forma _global_ y _en cascada_. Ahora hay muchos desarrolladores que creen que esta forma no es _Escalable_ y que hay que adoptar nuevas formas de dar estilos a cada Componente, en particular hablan de tener estilos _locales_ y no globales.
@@ -214,7 +193,7 @@ module.exports = React.createClass({
   render: function(){
     return (
       <div className=' prueba '>
-        Hola, Henry!!
+        Hola, Seba!!
       </div>
     )
   }
@@ -263,7 +242,7 @@ module.exports = React.createClass({
     console.log(prueba);
     return (
       <div className= {prueba}>
-        Hola, Henry!!
+        Hola, Seba!!
       </div>
     )
   }
@@ -304,7 +283,7 @@ module.exports = React.createClass({
   render: function(){
     return (
       <div className= {s.prueba}>
-        <h1 className={s.title}>Hola, Henry!!</h1>
+        <h1 className={s.title}>Hola, Seba!!</h1>
         <p className{[s.title, s.size].join[' ']}>Prueba</p>
       </div>
     )

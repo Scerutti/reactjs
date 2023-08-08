@@ -34,21 +34,21 @@ describe("04 | Ejercicios", () => {
     contact.find("input[name='name']").simulate("change", {
       target: {
         name: "name",
-        value: "Henry",
+        value: "Avivate",
       },
     });
 
     contact.find("input[name='email']").simulate("change", {
       target: {
         name: "email",
-        value: "henry@gmail.com",
+        value: "avivate@gmail.com",
       },
     });
 
     contact.find("textarea[name='message']").simulate("change", {
       target: {
         name: "message",
-        value: "Mensaje Henry",
+        value: "Mensaje Avivate",
       },
     });
 

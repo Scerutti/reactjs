@@ -78,8 +78,8 @@ describe('04 | Ejercicios', () => {
   });
 
   it("Products debería renderizar el estado global 'storeName' recibido por props", () => {
-    products = mount(<Products getStoreName={function(){}} list={[]} storeName='Henry-Market'/>);
-    expect(products.find('h1').at(0).text()).toEqual('Henry-Market');
+    products = mount(<Products getStoreName={function(){}} list={[]} storeName='Avivate-Market'/>);
+    expect(products.find('h1').at(0).text()).toEqual('Avivate-Market');
   });
 
   it("Products deberia renderizar una Card por cada elemento de la lista recibida por props y asignar las props correspondientes", () => {

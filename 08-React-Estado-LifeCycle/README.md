@@ -1,24 +1,3 @@
-![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
-
-<table class="hide" width="100%" style='table-layout:fixed;'>
-  <tr>
-   <td>
-    <a href="https://airtable.com/shrHsDa2eamWqLAre?prefill_clase=08-React-Estado-LifeCycle">
-   <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
-   <br>
-   Hacé click acá para dejar tu feedback sobre esta clase.
-    </a>
-   </td>
-              <td>
-      <a href="https://quiz.soyhenry.com/evaluation/new/606df913656c8d23c2e60e99">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/HSQuiz.svg/768px-HSQuiz.svg.png" width="100" height="100"/>
-        <br>
-        Hacé click acá completar el quiz teórico de esta lecture.
-      </a>
-   </td>
-  </tr>
-</table>
-
 # React Estado LifeCycle
 
 ## La mejor manera: Webpack
@@ -140,7 +119,7 @@ class HelloWorld extends React.Component {
   render(){
     return (
       <div>
-        Hola, Soy Henry!!
+        Hola, Soy Seba!!
       </div>
     )
   }
@@ -149,7 +128,7 @@ class HelloWorld extends React.Component {
 function HelloWorldFunction() {
   return(
     <div>
-      Hola, Soy Henry!
+      Hola, Soy Seba!
     </div>
   )
 };
@@ -281,7 +260,7 @@ class HelloWorld extends React.Component {
     )
   }
 };
-ReactDOM.render(<HelloWorld name='Soy Henry' />, document.getElementById('app'));
+ReactDOM.render(<HelloWorld name='Soy Seba' />, document.getElementById('app'));
 ```
 
 Como vemos, ahora tenemo un Componente que maneja un _Estado_ interno, que se inicializa usando una _prop_ y que está pensado en cambiar en el futuro.
@@ -310,7 +289,7 @@ function HelloWorld(props) {
     </div>
   )
 };
-ReactDOM.render(<HelloWorld name='Soy Henry' />, document.getElementById('app'));
+ReactDOM.render(<HelloWorld name='Soy Seba' />, document.getElementById('app'));
 ```
 
 Aca vemos el uso de el Hook `useState`. Lo llamamos dentro de un componente funcional para agregarle un estado local. React mantendrá este estado entre re-renderizados. useState devuelve un array con 2 elementos: el valor de estado actual y una función que le permite actualizarlo. Puedes llamar a esta función desde un controlador de eventos o desde otro lugar. Es similar a this.setState en una clase, excepto que no combina el estado antiguo y el nuevo.
@@ -340,7 +319,7 @@ function HelloWorld(props) {
     </div>
   )
 };
-ReactDOM.render(<HelloWorld name='Soy Henry' />, document.getElementById('app'));
+ReactDOM.render(<HelloWorld name='Soy Seba' />, document.getElementById('app'));
 ```
 
 ## Anidando Componentes
@@ -352,8 +331,8 @@ Ahora armemos un ejemplo un poco más complejo, en este vamos a tener dos compon
 ```javascript
 class ContenedorAmigos extends React.Component {
   render(){
-    const name = 'Soy Henry';
-    const amigos = ['Toni', 'Franco', 'Emi', 'Solano'];
+    const name = 'Soy Seba';
+    const amigos = ['Gaspi', 'Santi', 'Nelso', 'Pepito'];
     return (
       <div>
         <h3> Nombre: {name} </h3>
@@ -364,7 +343,7 @@ class ContenedorAmigos extends React.Component {
 };
 ```
 
-En este componente hemos definido un método `render` un poco más complejo, en el tenemos dos variables (`name` y `amigos`) y retornamos un XML que utiliza estas dos variables. Como ven, podemos acceder a un _prop_ del mismo Componente usando los `{}`, de esta forma `{name}` va a ser reemplazado por `Soy Henry`. Luego llamamos a un componente que todavía no hemos definido con el nombre de `mostrarLista` y le pasamos como propiedad el arreglo `amigos`. Por lo tanto dentro de `mostrarLista` vamos a disponer de ese arreglo como una _prop_.
+En este componente hemos definido un método `render` un poco más complejo, en el tenemos dos variables (`name` y `amigos`) y retornamos un XML que utiliza estas dos variables. Como ven, podemos acceder a un _prop_ del mismo Componente usando los `{}`, de esta forma `{name}` va a ser reemplazado por `Soy Seba`. Luego llamamos a un componente que todavía no hemos definido con el nombre de `mostrarLista` y le pasamos como propiedad el arreglo `amigos`. Por lo tanto dentro de `mostrarLista` vamos a disponer de ese arreglo como una _prop_.
 
 Definamos el elemento hijo o _child_:
 
@@ -389,8 +368,8 @@ Viendo el ejemplo anterior usando funciones:
 
 ```javascript
 function ContenedorAmigos() {
-  const name = 'Soy Henry';
-  const amigos = ['Santi', 'Guille', 'Facu', 'Solano'];
+  const name = 'Soy Seba';
+  const amigos = ['Santi', 'Gaspi', 'Nelson', 'Pedritox'];
   return (
     <div>
       <h3> Nombre: {name} </h3>
@@ -948,7 +927,3 @@ const fnComparacion = function(prevProps, nextProps) {
 
 export default React.memo(Ejemplo, fnComparacion);
 ```
-
-## Homework
-
-Completa la tarea descrita en el archivo [README](https://github.com/soyHenry/FT-M2/blob/master/08-React-Estado-LifeCycle/homework/README.md)
