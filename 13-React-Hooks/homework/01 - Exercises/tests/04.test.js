@@ -81,7 +81,7 @@ describe("04 - Ejercicios", () => {
       formulario: {
         mensaje: "",
         asunto: "",
-        nombre: "Henry",
+        nombre: "Avivate",
         email: "",
       },
     });
@@ -90,7 +90,7 @@ describe("04 - Ejercicios", () => {
         <InfoEnviada />
       </Provider>
     );
-    expect(infoEnviada.find("h3").at(0).text()).toEqual("Henry");
+    expect(infoEnviada.find("h3").at(0).text()).toEqual("Avivate");
   });
 
   it('Debe renderizar una etiqueta "h3" con el valor de la propiedad "email" del estado "informacion"', () => {

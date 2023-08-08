@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import logo from "../../assets/logo.jpg";
-import logo_henry from "../../assets/logo_henry.png";
+import avivateLogo from "../../assets/avivate_logo.png"
 import styleNav from "./NavBar.module.css";
 
 export default function NavBar() {
@@ -12,7 +12,7 @@ export default function NavBar() {
           <Link to="/">
             <img src={logo} alt="logo" />
           </Link>
-          <img src={logo_henry} alt="logo_henry" />
+          <img src={avivateLogo} alt="avivate logo" />
         </li>
         <li>
           <h1>TIPOS DE MÚSICA</h1>

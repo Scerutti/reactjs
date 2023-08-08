@@ -16,15 +16,15 @@
       "json-server": "^0.17.0",
       "nock": "^13.2.9",
       "node-fetch": "^2.6.7",
-      "react": "^17.0.2",
-      "react-dom": "^17.0.2",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
       "react-router-dom": "^6.3.0",
       "react-scripts": "^5.0.1",
       "styled-components": "^5.3.5"
    },
    "scripts": {
-      "start": "react-scripts start",
-      "build": "react-scripts build",
+      "start": "vite",
+      "build": "vite build",
       "server": "json-server --watch db.json --port 3001",
       "test": "jest --detectOpenHandles --verbose",
       "test:01": "jest tests/01.test.js",
@@ -49,7 +49,11 @@
       ]
    },
    "devDependencies": {
-      "standard": "^17.0.0"
+      "@types/react": "^18.2.14",
+      "@types/react-dom": "^18.2.6",
+      "@vitejs/plugin-react": "^4.0.1",
+      "standard": "^17.0.0",
+      "vite": "^4.4.0"
    },
    "standard": {
       "env": [

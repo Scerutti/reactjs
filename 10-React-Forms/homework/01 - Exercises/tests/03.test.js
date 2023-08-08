@@ -20,8 +20,8 @@ describe("03 | Ejercicios", () => {
       expect(
         validate({
           name: "",
-          email: "henry@gmail.com",
-          message: "Mensaje Henry",
+          email: "avivate@gmail.com",
+          message: "Mensaje Avivate",
         })
       ).toEqual({
         name: "Se requiere un nombre",
@@ -31,9 +31,9 @@ describe("03 | Ejercicios", () => {
     it("El email debe coincidir con un formato válido", () => {
       expect(
         validate({
-          name: "Henry",
-          email: "henry",
-          message: "Mensaje Henry",
+          name: "Avivate",
+          email: "avivate",
+          message: "Mensaje Avivate",
         })
       ).toEqual({
         email: "Debe ser un correo electrónico",
@@ -43,8 +43,8 @@ describe("03 | Ejercicios", () => {
     it("El message debe ser obligatorio y no estar vacío", () => {
       expect(
         validate({
-          name: "Henry",
-          email: "henry@gmail.com",
+          name: "Avivate",
+          email: "avivate@gmail.com",
           message: "",
         })
       ).toEqual({
@@ -55,9 +55,9 @@ describe("03 | Ejercicios", () => {
     it("Si todos los campos son correctos, no debe devolver ningún error", () => {
       expect(
         validate({
-          name: "Henry",
-          email: "henry@gmail.com",
-          message: "Mensaje Henry",
+          name: "Avivate",
+          email: "avivate@gmail.com",
+          message: "Mensaje Avivate",
         })
       ).toEqual({});
     });
@@ -77,7 +77,7 @@ describe("03 | Ejercicios", () => {
       contact.find("input[name='name']").simulate("change", {
         target: {
           name: "name",
-          value: "Henry",
+          value: "Avivate",
         },
       });
       input = contact.find("input[name='name']");
@@ -88,7 +88,7 @@ describe("03 | Ejercicios", () => {
       contact.find("input[name='email']").simulate("change", {
         target: {
           name: "email",
-          value: "henry",
+          value: "avivate",
         },
       });
       input = contact.find("input[name='email']");
@@ -97,7 +97,7 @@ describe("03 | Ejercicios", () => {
       contact.find("input[name='email']").simulate("change", {
         target: {
           name: "email",
-          value: "henry@gmail.com",
+          value: "avivate@gmail.com",
         },
       });
       input = contact.find("input[name='email']");
@@ -117,7 +117,7 @@ describe("03 | Ejercicios", () => {
       contact.find("textarea[name='message']").simulate("change", {
         target: {
           name: "message",
-          value: "Mensaje Henry",
+          value: "Mensaje Avivate",
         },
       });
       input = contact.find("textarea[name='message']");

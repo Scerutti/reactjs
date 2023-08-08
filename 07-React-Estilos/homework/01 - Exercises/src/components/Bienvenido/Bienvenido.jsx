@@ -14,7 +14,7 @@ const alerts = { m1: 'Aprobado', m2: 'En curso' }
 export default function Bienvenido () {
   return (
     <div>
-      <h1>soy Henry!</h1>
+      <h1>Avivate!</h1>
       <h3>{studentName}</h3>
       <ul>
         {techSkills.map(skill => (

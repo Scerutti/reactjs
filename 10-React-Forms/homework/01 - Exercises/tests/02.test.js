@@ -32,19 +32,19 @@ describe("02 | Ejercicios", () => {
   it("El form debería cambiar de estado cuando escriban en el input de name", () => {
     expect(contact.find("input[name='name']").prop("value")).toEqual("");
     contact.find("input[name='name']").simulate("change", {
-      target: { value: "Henry", name: "name" },
+      target: { value: "Avivate", name: "name" },
     });
     const inputName = contact.find("input[name='name']");
-    expect(inputName.prop("value")).toEqual("Henry");
+    expect(inputName.prop("value")).toEqual("Avivate");
   });
 
   it("El form debería cambiar de estado cuando escriban en el input de email", () => {
     expect(contact.find("input[name='email']").prop("value")).toEqual("");
     contact.find("input[name='email']").simulate("change", {
-      target: { value: "henry@gmail.com", name: "email" },
+      target: { value: "avivate@gmail.com", name: "email" },
     });
     const inputEmail = contact.find("input[name='email']");
-    expect(inputEmail.prop("value")).toEqual("henry@gmail.com");
+    expect(inputEmail.prop("value")).toEqual("avivate@gmail.com");
   });
 
   it("El form debería cambiar de estado cuando escriban en el input de message", () => {

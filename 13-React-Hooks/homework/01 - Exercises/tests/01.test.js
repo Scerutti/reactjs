@@ -50,25 +50,25 @@ describe("01 | Ejercicios", () => {
   it("Dentro del componente ContactUs debería existir una función llamada handleInput que se encargue de manejar el estado", () => {
     let wrapper = contactUs.find("input[name='nombre']").simulate("change", {
       target: {
-        value: "Henry",
+        value: "Avivate",
         name: "nombre",
       },
     });
     expect(useState).toHaveBeenCalledWith({
-      nombre: "Henry",
+      nombre: "Avivate",
       email: "",
       asunto: "",
       mensaje: "",
     });
     wrapper = contactUs.find("input[name='email']").simulate("change", {
       target: {
-        value: "henry@gmail.com",
+        value: "avivate@gmail.com",
         name: "email",
       },
     });
     expect(useState).toHaveBeenCalledWith({
       nombre: "",
-      email: "henry@gmail.com",
+      email: "avivate@gmail.com",
       asunto: "",
       mensaje: "",
     });

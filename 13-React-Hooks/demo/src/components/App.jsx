@@ -11,7 +11,7 @@ export default function App() {
   return (
     <>
       <div>
-        <h3>Henry Hook Demo</h3>
+        <h3>Hook Demo</h3>
         <button onClick={() => setUseHook(prev => !prev)}>
           {`Change to ${useHook ? 'Class' : 'Hook'}`}
         </button>
